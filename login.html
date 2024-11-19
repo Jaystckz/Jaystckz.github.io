@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <form id="login-form">
+                <h2>Login</h2>
+                <input type="email" placeholder="Email" required>
+                <input type="password" placeholder="Password" required>
+                <button type="submit">Login</button>
+                <p>Don't have an account? <a href="#" id="show-signup">Sign Up</a></p>
+                <p><a href="#" id="show-forgot">Forgot Password?</a></p>
+            </form>
+
+            <form id="signup-form" style="display: none;">
+                <h2>Sign Up</h2>
+                <input type="text" placeholder="Username" required>
+                <input type="email" placeholder="Email" required>
+                <input type="password" placeholder="Password" required>
+                <button type="submit">Sign Up</button>
+                <p>Already have an account? <a href="#" id="show-login">Login</a></p>
+            </form>
+
+            <form id="forgot-form" style="display: none;">
+                <h2>Forgot Password</h2>
+                <input type="email" placeholder="Email" required>
+                <button type="submit">Reset Password</button>
+                <p>Remembered your password? <a href="#" id="show-login-again">Login</a></p>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+}
+
+h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+input {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+p {
+    text-align: center;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+</style>
+
+<script>
+    document.getElementById('show-signup').addEventListener('click', function(e) {
+    e.preventDefault();
+    document.getElementById('login-form').style.display = 'none';
+    document.getElementById('signup-form').style.display = 'block';
+});
+
+document.getElementById('show-login').addEventListener('click', function(e) {
+    e.preventDefault();
+    document.getElementById('signup-form').style.display = 'none';
+    document.getElementById('login-form').style.display = 'block';
+});
+
+document.getElementById('show-forgot').addEventListener('click', function(e) {
+    e.preventDefault();
+    document.getElementById('login-form').style.display = 'none';
+    document.getElementById('forgot-form').style.display = 'block';
+});
+
+document.getElementById('show-login-again').addEventListener('click', function(e) {
+    e.preventDefault();
+    document.getElementById('forgot-form').style.display = 'none';
+    document.getElementById('login-form').style.display = 'block';
+});
+</script>
+</html>
