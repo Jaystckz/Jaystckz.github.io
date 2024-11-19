@@ -504,10 +504,12 @@ iframe {
 
 .coach-header {
     text-align: center;
-    color: #e75639;
+    /* color: #e75639; */
     font-size: 25px;
     padding-top: 30px;
     background-color: #ebe7db;
+    /* color: #13336e; */
+    color:#13336e;
 }
 
 .coach-header p {
@@ -660,19 +662,28 @@ form {
 .team-member h2 {
     font-size: 1.5em;
     margin-top: 10px;
-    color: #333;
+    /* color: #333; */
+    color: #13336e;
 }
 
 .team-member p {
     font-size: 1em;
-    color: #666;
+    /* color: #666; */
+    color: #13336e;
+}
+
+.team-member h3 {
+    font-weight: bold;
+    font-size: 14px;
+    color:#13336e;
 }
 
 
 @media (max-width: 768px) {
     .navbar {
-        flex-direction: column;
+        /* flex-direction: column; */
         align-items: flex-start;
+        gap: 60px;
     }
 
     .nav-links {
@@ -698,7 +709,8 @@ form {
     } */
 
     .hero-text p {
-        font-size: 18px;
+        font-size: 20px;
+        margin-bottom: 5vh;
     }
 
     .hero-text {
@@ -730,32 +742,55 @@ form {
 
     .upcoming-games {
         background-size: auto;
-        height: 65vh;
+        height: 75vh;
     }
 
     .coach-corner {
         width: 100vw;
-        height: 80vh;
+        height: 75vh;
         background-position: center;
+    }   
+
+    .coach-corner p {
+        font-size: 15.5px;
+    }
+
+    .coach-corner h1 {
+        font-size: 35px;
+        line-height: normal;
+        margin-bottom: 10px;
+    }
+
+    .coach-btn {
+        width: 30vw;
     }
 
     .coach {
         width: 50vw;
         margin: 0;
         height: 80vh;
+        padding-top: 50px;
     }
 
     .coach-container {
         /* justify-content: left; */
-        height: 30vh;
-        background: none;    
+        height: 45vh;
+        background: url(/images/amefootball2.jpg);
+        background-position: center;
+        bacground-size: cover;
+    }
+
+    .coach-container img {
+        display: none;
     }
 
     .c-text {
-        font-size: 20px;
-        padding-top: 10vh;
+        font-size: 30px;
+        padding-top: 12vh;
         overflow: hidden;
         width: 50vw;
+        /* float: right; */
+        margin-left: 50vw;
     }
 
     .coach-container img {
@@ -772,8 +807,11 @@ form {
     }
 
     .newsletter {
-        flex-direction: column;
-        
+        flex-direction: column; 
+    }
+
+    .newsletter h2 {
+        font-size: 25px;
     }
 
     .join-us {
@@ -795,7 +833,7 @@ form {
 
     .home-footer {
         /* position: absolute; */
-        margin-top: 65vh;
+        margin-top: 68vh;
     }
 
     .team-hero h1 {
@@ -804,13 +842,17 @@ form {
 
     .current-roster p {
         font-size: 15px;
+        padding: 10px;
+        padding-top: 0;
     }
 
     .current-roster h1 {
         font-size: 25px;
+        padding-top: 0;
     }
     .roster {
-         padding-left: 20vw;
+         padding-left: 20vw;  
+         padding-top: 0;  
     }
 
     .roster-name {
@@ -823,6 +865,14 @@ form {
 
     .roster-no {
         font-size: 10px;
+    }
+
+    .sub-btn {
+        width: 30vw;
+    }
+
+    .join-now {
+        padding: 5px;
     }
 
     .match h1 {
@@ -864,7 +914,8 @@ form {
     }
 
     .coach-header p {
-        font-size: 102x;
+        font-size: 15px;
+        padding: 0 6px;
     }
 
     .coach1, .coach2 {
@@ -872,14 +923,22 @@ form {
         width: 100vw;
     }
 
+    .coach2 {
+        /* margin-bottom: 0; */
+        /* padding-bottom: 0; */
+    }
+
     .coach1 img {
          width: 100%;
-
+         padding: 0;
     }
 
     .our-coaches {
         gap: 20px;
-    
+        flex-direction: column;
+        /* width: 10vw; */
+        justify-content: center;
+        text-align: center;
     }
 
     .contacti {
@@ -894,7 +953,17 @@ form {
         }
     
         .team-member {
-            width: 90%; /* Full width for mobile */
+            width: 100%; /* Full width for mobile */
+        }
+        
+        .team-member h2 {
+            font-size: 30px;
+        }
+
+        .team-member h3 {
+            font-size: 15px;
+            margin-bottom: 5px;
+            font-weight: bold;
         }
     
 }
