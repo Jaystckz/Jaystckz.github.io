@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <form id="login-form">
+                <a href="index.html"><center><img src="/images/football-helmet.png" alt="logo" style="width: 50px;"></center></a>
+                <br>
+                <h2>Sign in to your Warriors Account</h2>
+                <br>
+                <input type="email" placeholder="Email" required> 
+                <input type="password" placeholder="Password" required> 
+                <button type="submit">Login</button>
+                <p>Don't have a Warrior account? <a href="#" id="show-signup">Sign Up</a></p>
+                <p><a href="#" id="show-forgot">Forgot Password?</a></p>
+                <!-- <p class="or">or</p>
+                <button class="btn" type="submit">Login with Facebook</button>
+                <button class="btn2" type="submit">Login with Google</button> -->
+            </form>
+
+            <form id="signup-form" style="display: none;">
+                <a href="index.html"><center><img src="/images/football-helmet.png" alt="logo" style="width: 50px;"></center></a>
+                <h2>Create a Warriors Account</h2>
+                <!-- <p>Get the latest news on your team, follow your favorite players, and manage your subscriptions</p> -->
+                <input type="text" placeholder="Username" required>
+                <input type="email" placeholder="Email" required>
+                <input type="password" placeholder="Password" required minlength="5" maxlength="15">
+                <input type="password" placeholder="confirm - Password" required minlength="5" maxlength="15">
+                <button type="submit">Sign Up</button>
+                <p>Already have an account? <a href="#" id="show-login">Login</a></p>
+                <!-- <p class="or">or</p>
+                <button class="btn" type="submit">Login with Facebook</button>
+                <button class="btn2" type="submit">Login with Google</button> -->
+            </form>
+             
+            <form id="forgot-form" style="display: none;"> <br>
+                <a href="index.html"><center><img src="/images/football-helmet.png" alt="logo" style="width: 50px;"></center></a> <br>
+                <h2>Forgot Password</h2> <br>
+                <input type="email" placeholder="Email" required> <br>
+                <button type="submit">Reset Password</button>
+                <p>Remembered your password? <a href="#" id="show-login-again">Login</a></p>
+            </form>
+
+            <!-- <section>
+                <div>
+                    <p class="or">or</p>
+                    <button class="btn" type="submit">Login with Facebook</button>
+                    <button class="btn2" type="submit">Login with Google</button>
+                </div>
+            </section> -->
+            
+        </div>
+
+        <!-- <section>
+            <marquee behavior="scroll" direction="left">
+                <center>
+                     <div class="social-icons">
+                <a href="https://www.instagram.com/"><img src="/images/instagram.png" alt="instagram" style="width: 30px;"></a>
+                <a href="https://www.facebook.com"><img src="/images/facebook.png" alt="facebook" style="width: 30px;"></a>
+                <a href="https://www.gmail.com"><img src="/images/gmail.png" alt="youtube" style="width: 30px;"></a>
+                <a href="https://www.twitter.com"><img src="/images/twitter.png" alt="gmail" style="width: 30px;"></a>
+            </div>
+                </center>
+            </marquee> -->
+            
+           
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+<style>
+    .or {
+        /* border: 1px solid #999; */
+        border-bottom: solid 2px lightgray;
+        width: 22vw;
+        color: #999;
+        margin-top: 0;
+    }
+    body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    /* background-color: #C53ABC; */
+    background: url("/images/nfl.jpeg");
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    /* background: #fff; */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    /* background-color: #C53ABC; */
+    height: 400px;
+    background-color: white;
+    opacity: 0.9;
+    padding-bottom: 5vh;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+}
+
+h2 {
+    /* margin-bottom: 20px; */
+    text-align: center;
+    /* color: #00E7FF; */
+    /* color: #E7FF00; */
+    font-size: 20PX;
+    margin: 0;
+    /* color: #F0FA05; */
+    margin-bottom: 10px;
+    color: #333333;
+    font-weight: bold;
+}
+
+input {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 30vw;
+    height: 4vh;
+}
+
+input::after {
+    border: 5px solid black;
+}
+
+button {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-bottom: 10px;
+    width: 32vw;
+    height: 7vh;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+p {
+    text-align: center;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.btn {
+    width: 22vw;
+    line-height: 2;
+    background-color: #316ff6;
+    color: whitesmoke;
+    border-radius: 5px;
+}
+
+.btn2 {
+    width: 22vw;
+    line-height: 2;
+    background-color: white;
+    border: solid 2px lightgrey;
+    color: #999;
+    border-radius: 5px;
+}
+
+.btn2:hover {
+    background-color:  #0056b3;
+}
+
+#show-signup {
+    border: 1.5px solid #102D8C;
+    padding: 3px;
+    color: #102D8C;
+    font-size: 15px;
+}
+
+#show-signup:hover {
+    text-decoration: none;
+}
+
+#show-login {
+    border: 1.5px solid #102D8C;
+    padding: 3px;
+    color: #102D8C;
+    font-size: 15px;
+}
+
+#show-login:hover {
+    text-decoration: none;
+}
+
+
+
+@media (max-width: 768px) {
+    input {
+        width: 80vw;
+        border: 1px solid black;
+    }
+
+    input::after {
+        border: 2px solid black;
+    }
+
+    button {
+        width: 86vw;
+    }
+
+    .or {
+        width: 76vw;
+    }
+
+    .btn {
+        width: 76vw;
+    }
+
+    .btn2 {
+        width: 76vw;
+    }
+
+    body {
+        padding: 0 15px;
+        height: 100%;
+    }
+
+    .container {
+        padding-bottom: 50px;
+        margin-top: 15vh;
+    }
+
+    
+}
+</style>
+
+<script>
+    document.getElementById('show-signup').addEventListener('click', function(e) {
+    e.preventDefault();
+    document.getElementById('login-form').style.display = 'none';
+    document.getElementById('signup-form').style.display = 'block';
+});
+
+document.getElementById('show-login').addEventListener('click', function(e) {
+    e.preventDefault();
+    document.getElementById('signup-form').style.display = 'none';
+    document.getElementById('login-form').style.display = 'block';
+});
+
+document.getElementById('show-forgot').addEventListener('click', function(e) {
+    e.preventDefault();
+    document.getElementById('login-form').style.display = 'none';
+    document.getElementById('forgot-form').style.display = 'block';
+});
+
+document.getElementById('show-login-again').addEventListener('click', function(e) {
+    e.preventDefault();
+    document.getElementById('forgot-form').style.display = 'none';
+    document.getElementById('login-form').style.display = 'block';
+});
+
+
+// var i = 0;
+// var trial = 3;
+
+// while (i < trial) {
+//     user = prompt("Enter your username")
+//     pwd prompt("Enter your password")
+
+//     if(user == "jamiu" && pwd == "jjj") {
+//         alert("Logged in successfully")
+//         question
+//         break
+//     }
+// }
+</script>
+</html>

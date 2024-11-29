@@ -1,0 +1,1099 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar styling */
+.navbar {
+    background-color: #1E3A8A; /* Deep blue color for the navbar */
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar .logo a {
+    color: #fff;
+    font-size: 28px;
+    font-weight: bold;
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+
+.logo p {
+    color: white;
+    font-size: 20px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links a {
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #FFD700; 
+    /* border-bottom: red solid 3px; */
+}
+
+.search-bar input {
+    padding: 8px 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    transition: background-color 0.3s ease;
+}
+
+.search-bar input:focus {
+    background-color: #F1F5F9;
+}
+
+.search-bar p {
+    color: white;
+}
+
+.hero {
+    background-image: url("/images/amefootball1.jpg");
+    color: white;
+    height: 79vh;
+    background-position: center;
+    background-size: cover;
+    background-color: #1E3A8A;
+    /* background-blend-mode: overlay; */
+}
+
+.hero-text {
+   text-align: center; 
+   padding-top: 27vh;
+   line-height: 2;
+}
+
+.hero-text h1 {
+    font-size: 50px;
+}
+
+.hero-text p {
+    font-size: 20px;
+    color: white;
+    font-weight: bolder;
+}
+
+.hero-text p span {
+    color: red;
+    font-size: 25px;
+}
+
+.btn {
+    color: white;
+    text-decoration: none;
+    background-color: #1E3A8A;
+    padding: 10px;
+}
+
+.btn:hover {
+    background-color: #142657;
+    text-decoration: underline wavy red;
+}
+
+.games {
+    display: flex;
+    gap: 10vw;
+    justify-content: center;
+}
+
+.upcoming-games {
+    text-align: center;
+    background-color: #ebe7db;
+    /* background-image: url("/images/ftbg.jpg"); */
+    height: 80vh;
+    background-size: cover;
+    background-position: center;
+    /* background-image: url(/images/bg.jpg); */
+}
+
+.upcoming-games h1 {
+    padding-top: 100px;
+    color: #13336e;
+    font-size: 35px;
+}
+
+.games h1 {
+    color: #e75639;
+    font-size: 30px;
+}
+
+.games p {
+    color: #e75639;
+}
+
+.tkt-btn {
+    margin-top: 30px;
+    background-color: #1E3A8A;
+    padding: 10px;
+    width: 20vw;
+    color: white;
+    border: none;
+    text-align: center;
+    font-size: 19px;
+}
+
+.coach-corner {
+    background-image: url(/images/amefootball3.jpg);
+    height: 70vh;
+    background-position: center;
+    background-size: cover;
+}
+
+.coach {
+    background-color: #e75639;
+    color: white;
+    width: 30VW;
+    height: 70VH;
+    line-height: 1.8;
+    padding-top: 70px;
+    text-align: center;
+    margin-left: 56px;
+}
+
+.coach H1 {
+    font-size: 40PX;
+    margin-top: 40px;
+}
+
+.coach-btn {
+    background-color: #f1a41d;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    color: #142657;
+    margin-top: 50px;
+    cursor: pointer;
+}
+
+.coach-container {
+    /* background-image: url(/images/amefootball2.jpg); */
+    background-position: center;
+    background-size: cover;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    background-color:  #ebe7db;
+}
+
+.c-text {
+    background-color: #e75639;
+    width: 40vw;
+    text-align: center;
+    font-size: 50px;
+    padding-top: 25vh;
+    color: #142657;
+}
+
+.c-text span {
+    color: #f1a41d;
+}
+
+.video-section {
+    background-color: #ebe7db;
+    padding-top: 10vh;
+    text-align: center;
+}
+
+.video-section h1 {
+    font-size: 20px;
+    color: #e75639;
+}
+
+.video-section h2 {
+    font-size: 40px;
+    color: #13336e;
+}
+
+.video-section h2 span {
+    font-size: 60px;
+    color: #13336e;
+}
+
+.join-us {
+    background-color: #13336e;
+    padding: 40px;
+    width: 40vw;
+    text-align: center;
+}
+
+.join-us h1 {
+    color: #f1a41d;
+    padding-top: 20px;
+}
+
+.join-us h2 {
+    color: white;
+    font-size: 30px;
+}
+
+label {
+    color: white;
+    font-size: 20px;
+}
+
+.email {
+    line-height: 1.8;
+}
+
+.email input {
+    width: 20vw;
+    height: 5vh;
+    background: none;
+    border: white solid 3px;
+}
+
+.newsletter {
+    background-color:  #ebe7db;
+    line-height: 1.2;
+    display: flex;
+    justify-content: center;
+    height: 70vh;
+    /* padding-bottom: 10px; */
+}
+
+.socials {
+        /* padding-top: 40px; */
+        background-color: #f1a41d;
+        /* padding: 40px; */
+        width: 40vw;
+        text-align: center;
+        line-height: 5;
+}
+
+.socials h1 {
+    padding-top: 20px;
+    font-size: 30px;
+    color: #13336e;
+    font-weight: bold;
+}
+
+.icons {
+    /* display: flex; */
+    margin-bottom: 25px;
+}
+
+.subscribe-btn {
+    width: 20vw;
+    height: 5vh;
+    background-color: #e75639;
+    border: none;
+    color: white;
+    /* font-weight: bold; */
+    font-size: 20px;
+}
+
+footer {
+    background-color: #1E3A8A;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    padding: 20px;
+}
+
+.team-hero {
+    background-color: #e75639;
+    padding: 40px;
+    text-align: center;
+    color: white;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.images {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    background-color: #ebe7db;
+}
+
+.images img {
+    width: 100%;
+    height: auto;
+}
+
+.current-roster {
+    text-align: center;
+    background-color: #ebe7db;
+}
+
+.current-roster h1 {
+    padding-top: 50px;
+    color: #13336e;
+}
+
+.current-roster {
+    color: #13336e;
+    font-size: 19px;
+}
+
+.roster {
+    /* margin: 20px; */
+    padding: 40px;
+    background-color: #ebe7db;
+    /* display: flex; */
+    padding-left: 32vw;
+}
+
+.roster-icon {
+    display: flex;
+    gap: 20%;
+    padding-top: 20px;
+    
+}
+
+.roster-name {
+    display: flex;
+    gap: 10vw;
+    /* margin: 10px; */
+    border-top: #e75639 solid 5px;
+    width: 34vw;
+    margin-top: 10px;
+}
+
+.roster-container {
+    display: flex;
+    gap: 10vw;
+    /* margin: 10px; */
+    border-top: #e75639 solid 5px;
+    width: 34vw;
+    margin-top: 10px;
+}
+
+.roster-text {
+    padding-top: 10px;
+    line-height: 1.8;
+    color: #13336e;
+    font-size: 18px;
+}
+
+.roster-no {
+    padding-top: 10px;
+    line-height: 1.8;
+    color: #e75639;
+    font-size: 18px;
+}
+
+.roster-no span {
+    color: #13336e;
+    font-size: 10px;
+}
+
+.join-now {
+     background-color: #ebe7db;
+     text-align: center;
+     padding-top: 10vh;
+}
+
+.join-now h1 {
+     color: #e75639;
+}
+
+.join-now h2 {
+     color: #13336e;
+     font-size: 30px;
+}
+
+.join-now label, .join-now input {
+     color: #13336e;
+     font-size: 22px;
+}
+
+.team-check {
+    padding-bottom: 5vh;
+}
+
+.schedule-header {
+    background-color: #e75639;
+    padding: 40px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+.match {
+    background-color: #13336e;
+    color: white;
+    padding: 10px;
+    width: 23vw;
+    height: 40vh;
+    text-align: center;
+}
+
+.match p {
+    font-size: 20px;
+    color: #f1a41d;
+}
+
+.match  h1{
+    color: #f1a41d;
+    font-size: 40px;
+}
+
+.buy-btn {
+    background-color: #e75639;
+    border: none;
+    padding: 10px;
+    width: 10vw;
+    /* margin-left: vw; */
+    font-weight: 10px;
+    color: white;
+    font-size: 16px;
+}
+
+.matches {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 10px;
+    background-color: #ebe7db;
+}
+
+.location h1 {
+    text-align: center;
+    color: #13336e;
+    font-size: 30px;
+}
+
+.location p {
+    text-align: center;
+    color: #13336e;
+    font-size: 18px;
+}
+
+.location {
+    background-color: #ebe7db;
+    padding-top: 15vh;
+    line-height: 1.3;
+}
+
+iframe {
+    margin-left: 15vw;
+    margin-top: 20px;
+}
+
+.sub-btn {
+    width: 15vw;
+    margin-left: 5vw;
+    border: none;
+    padding: 5px;
+    color: white;
+    /* background-color: #13336e; */
+    cursor: pointer;
+}
+
+.coach-header {
+    text-align: center;
+    /* color: #e75639; */
+    font-size: 25px;
+    padding-top: 30px;
+    background-color: #ebe7db;
+    /* color: #13336e; */
+    color:#13336e;
+}
+
+.coach-header p {
+    font-size: 18px;
+}
+
+.coach1 {
+    /* color: white; */
+    background-color: #13336e;
+    width: 30vw;
+    height: 110vh;
+}
+
+.our-coaches {
+    display: flex;
+    gap: 10vw;
+    justify-content: center;
+    margin-top: 70px;
+    background-color: #ebe7db;
+    padding-bottom: 20px;
+}
+
+.coach1 h3, .coach2 h3 {
+    padding-top: 30px;
+}
+
+.coach1 h4, .coach2 h4 {
+    color: white;
+    padding-top: 10px;
+    font-size: 15px;
+}
+
+.coach1 p, .coach2 p {
+    color: white;
+    font-size: 15px;
+    margin-top: 18px;
+    padding: 10px;
+}
+
+.coach2 {
+    background-color: #13336e;
+    width: 30vw;
+    height: 110vh;
+}
+
+.contact-header {
+    text-align: center;
+    padding-top: 50px;
+    color: #13336e;
+    font-size: 20px;
+    line-height: 1.5;
+    background-color: #ebe7db;
+}
+
+.contact-header h2 {
+    font-size: 19px;
+}
+
+.contact-header p {
+    font-size: 16px;
+    padding-top: 10px;
+}
+
+form {
+    background-color: #ebe7db;
+    display: grid;
+}
+
+.contacti {
+    color: #13336e;
+    font-weight: bold;
+    font-size: 18px;
+    margin-left: 25vw;
+}
+
+.contact1 {
+    padding-top: 25px;
+}
+
+.contacti {
+    width: 50vw;
+    height: 40px;
+    margin-left: 25vw;
+}
+
+.submit {
+    border: none;
+    background-color: #13336e;
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    padding: 5px;
+    width: 50vw;
+    height: 40px;
+    margin-left: 25vw;
+}
+
+.locate h1 {
+    color: #13336e;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.locate {
+    background-color: #ebe7db;
+    padding-bottom: 20px;
+}
+
+
+.team-section {
+    padding: 50px;
+    /* background: #f4f4f4; */
+    text-align: center;
+    background-color: #ebe7db;
+}
+
+.team-section h1 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    /* color: #333; */
+    color: #13336e;
+}
+
+.team-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.team-member {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 250px; /* Fixed width for consistency */
+    transition: transform 0.3s;
+}
+
+.team-member:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+.team-member img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.team-member h2 {
+    font-size: 1.5em;
+    margin-top: 10px;
+    /* color: #333; */
+    color: #13336e;
+}
+
+.team-member p {
+    font-size: 1em;
+    /* color: #666; */
+    color: #13336e;
+}
+
+.team-member h3 {
+    font-weight: bold;
+    font-size: 14px;
+    color:#13336e;
+}
+
+.tickets-header {
+    background-color: #E75639;
+    color: #EBE7DB;
+    padding: 20px;
+    text-align: center;
+    line-height: 2.5;
+}
+
+.tickets-header h1 {
+    font-size: 56px;
+    font-family: sans-serif;
+}
+
+.tickets-header p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+.buy-tkt {
+    padding: 10px;
+    color: #13336E;
+    background-color: #F1A41D;
+    border: none;
+    font-size: 15px;
+}
+
+.game-location {
+    background-color: #EBE7DB;
+    padding: 40px;
+    text-align: center;
+    line-height: 1.8;
+}
+
+.game-location #p1 {
+    color: #E75658;
+    font-size: 18px;
+}
+
+.game-location p {
+    color: #13336E;
+    font-size: 18px;
+}
+
+.about-event {
+    background-color: #EBE7DB;
+    text-align: center;
+}
+
+.about-event #p2 {
+    color: #E75658;
+}
+
+.about-event p {
+    color: #13336E;
+    line-height: 1.8;
+
+}
+
+.ticket-container2 {
+    background-color: #F1A41D;
+    justify-content: center;
+    display: flex;
+    gap: 20vw;
+    padding: 20px 0;
+}
+
+.ticket-container {
+    background-color: #EBE7DB;
+    text-align: center;
+    padding: 40px;
+    height: 60vh;
+}
+
+.tkt-price {
+    border-left: 1.5px white solid;
+    padding-left: 20px;
+}
+
+select {
+    border: 1px solid black;
+    width: 7vw;
+    height: 7vh;
+    color: #13336E;
+    background-color: #F1A41D;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+.tkt-total {
+    display: flex;
+    gap: 5vw;
+}
+
+.total-section {
+    float: right;
+    padding-top: 2vh;
+    margin-right: 8vw;
+    
+}
+
+.tkt-chk {
+    width: 15.7vw;
+    height: 6vh;
+    background-color: #E75639;
+    color: white;
+    border: none;
+    /* background: linear-gradient(to right, black, red); */
+}
+
+.tkt-map {
+    background-color: #EBE7DB;
+}
+
+.map-section {
+        background-color: #EBE7DB;
+
+}
+
+.map-section p {
+    text-align: center;
+    padding-top: 20px;
+}
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+    .navbar {
+        /* flex-direction: column; */
+        align-items: flex-start;
+        gap: 60px;
+    }
+
+    .nav-links {
+        width: 100%;
+        margin-top: 15px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .hero-text h1 {
+        font-size: 35px;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    /* .hero-text h1 span {
+        color: lightblue;
+    } */
+
+    .hero-text p {
+        font-size: 20px;
+        margin-bottom: 5vh;
+    }
+
+    .hero-text {
+        padding-top: 25vh;
+    }
+
+    .hero {
+        height: 82vh;
+    }
+
+    .upcoming-games h1 {
+        font-size: 25px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .games {
+        flex-direction: column;
+    }
+
+    .upcoming-games h1 {
+        padding-top: 20px;
+    }
+
+    .tkt-btn {
+        width: 50vw;
+        margin-top: 2px;
+    }
+
+    .upcoming-games {
+        background-size: auto;
+        height: 75vh;
+    }
+
+    .coach-corner {
+        width: 100vw;
+        height: 75vh;
+        background-position: center;
+    }   
+
+    .coach-corner p {
+        font-size: 15.5px;
+    }
+
+    .coach-corner h1 {
+        font-size: 35px;
+        line-height: normal;
+        margin-bottom: 10px;
+    }
+
+    .coach-btn {
+        width: 30vw;
+    }
+
+    .coach {
+        width: 50vw;
+        margin: 0;
+        height: 80vh;
+        padding-top: 50px;
+    }
+
+    .coach-container {
+        /* justify-content: left; */
+        height: 45vh;
+        background: url(/images/amefootball2.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+
+    .coach-container img {
+        display: none;
+    }
+
+    .c-text {
+        font-size: 30px;
+        padding-top: 12vh;
+        overflow: hidden;
+        width: 50vw;
+        /* float: right; */
+        margin-left: 50vw;
+    }
+
+    .coach-container img {
+        width: 50vw;
+    }
+
+    .video-section h2 {
+        font-size: 23px;
+        padding: 10px;
+    }
+
+    .video-section h2 span {
+        font-size: 40px;
+    }
+
+    .newsletter {
+        flex-direction: column; 
+    }
+
+    .newsletter h2 {
+        font-size: 25px;
+    }
+
+    .join-us {
+        width: 100vw;
+        margin-top: 80vh;
+    }
+
+    .socials {
+        width: 100vw;
+    }
+
+    .email input {
+        width: 50vw;
+    }
+
+    .subscribe-btn {
+        width: 50vw;
+    }
+
+    .home-footer {
+        /* position: absolute; */
+        margin-top: 68vh;
+    }
+
+    .team-hero h1 {
+        font-size: 25px;
+    }
+
+    .current-roster p {
+        font-size: 15px;
+        padding: 10px;
+        padding-top: 0;
+    }
+
+    .current-roster h1 {
+        font-size: 25px;
+        padding-top: 0;
+    }
+    .roster {
+         padding-left: 20vw;  
+         padding-top: 0;  
+    }
+
+    .roster-name {
+         width: 63vw;
+    }
+
+    .roster-text {
+         font-size: 10px;
+    }
+
+    .roster-no {
+        font-size: 10px;
+    }
+
+    .sub-btn {
+        width: 30vw;
+    }
+
+    .join-now {
+        padding: 5px;
+    }
+
+    .match h1 {
+        font-size: 20px;
+        padding-top: 10px;
+    }
+
+    .match p {
+        font-size: 14px;
+    }
+
+    .match {
+        width: 45vw;
+        height: 30vh;
+    }
+
+    .matches {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .buy-btn {
+        width: 30vw;
+        font-size: 15px;
+    }
+
+    .schedule-header {
+        font-size: 10px;
+        padding: 20px;
+    }
+
+    iframe {
+        width: 80vw;
+        margin-left: 10vw;
+        /* margin-top: 0; */
+    }
+
+    .location {
+        padding-top: 20px;
+    }
+
+    .coach-header p {
+        font-size: 15px;
+        padding: 0 6px;
+    }
+
+    .coach1, .coach2 {
+        height: 110vh;
+        width: 100vw;
+    }
+
+    .coach2 {
+        /* margin-bottom: 0; */
+        /* padding-bottom: 0; */
+    }
+
+    .coach1 img {
+         width: 100%;
+         padding: 0;
+    }
+
+    .our-coaches {
+        gap: 20px;
+        flex-direction: column;
+        /* width: 10vw; */
+        justify-content: center;
+        text-align: center;
+    }
+
+    .contacti {
+        /* margin: 0; */
+        width: 90vw;
+        margin-left: 20px;
+        padding-top: 20px;
+    }
+    .team-container {
+        flex-direction: column; /* Stack elements on small screens */
+        align-items: center;
+        }
+    
+        .team-member {
+            width: 100%; /* Full width for mobile */
+        }
+        
+        .team-member h2 {
+            font-size: 30px;
+        }
+
+        .team-member h3 {
+            font-size: 15px;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+    
+}
